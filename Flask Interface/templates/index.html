@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake Social Media Posts Detector</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Page Container -->
+    <div class="min-h-screen flex items-center justify-center">
+        <div class="bg-white shadow-lg rounded-lg p-8 w-full max-w-md">
+            <!-- Title -->
+            <h1 class="text-3xl font-bold text-center mb-6 text-blue-600">Fake Social Media Posts</h1>
+            
+            <!-- Form -->
+            <form method="POST" class="space-y-4">
+                <div>
+                    <label for="headline" class="block text-gray-700 font-semibold mb-2">Enter a headline:</label>
+                    <input 
+                        type="text" 
+                        id="headline" 
+                        name="headline" 
+                        required 
+                        class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                        placeholder="e.g., Breaking news headline...">
+                </div>
+                <div>
+                    <button 
+                        type="submit" 
+                        class="w-full bg-blue-600 text-white font-semibold py-2 rounded-md hover:bg-blue-700 transition duration-300">
+                        Submit
+                    </button>
+                </div>
+            </form>
+
+            <!-- Prediction Result -->
+            {% if prediction %}
+            <div class="mt-6">
+                <h2 class="text-xl font-semibold text-center">
+                    Prediction: 
+                    <span class="{% if prediction == 'Real' %}text-green-600{% else %}text-red-600{% endif %}">
+                        {{ prediction | capitalize }}
+                    </span>
+                </h2>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</body>
+</html>
