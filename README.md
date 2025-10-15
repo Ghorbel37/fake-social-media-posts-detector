@@ -62,7 +62,7 @@ pip (Python package manager)
 
 ### Clone the Repository
 ```bash
-git clone https://github.com/yourusername/fake-social-media-posts-detector.git
+git clone https://github.com/Ghorbel37/fake-social-media-posts-detector.git
 cd fake-social-media-posts-detector
 ```
 
