@@ -1,0 +1,13 @@
+# Notebook (training) and the Flask app in "Flask Interface/"
+# scikit-learn is pinned: the saved models (*.pkl) were made with 1.5.2
+scikit-learn==1.5.2
+joblib
+numpy
+pandas
+flask
+nltk
+textblob
+googletrans==4.0.0rc1
+kagglehub
+beautifulsoup4
+requests
