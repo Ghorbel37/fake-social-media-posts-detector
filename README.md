@@ -68,7 +68,7 @@ cd fake-social-media-posts-detector
 
 ### Install Dependencies
 ```bash
-pip install flask pandas numpy scikit-learn joblib beautifulsoup4 requests googletrans==4.0.0rc1 nltk kagglehub
+pip install -r requirements.txt
 ```
 
 ### Download NLTK Data (if required)
