@@ -1,5 +1,7 @@
 # Fake Social Media Posts Detector
 
+*Built for a data mining course (2024).*
+
 A machine learning-powered web application that detects fake news and misinformation in social media posts using Natural Language Processing (NLP) and Random Forest classification.
 
 ## 🎯 Project Overview
